@@ -16,6 +16,8 @@ int main()
     std::cout << "\nPlease insert variable B:\n";
     std::cin >> B;
 
+    std::cout << "\n*****************************\n";
+
     //This function sums variable A and variable B and prints the result
     void addAB(int A, int B);
     {
