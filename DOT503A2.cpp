@@ -50,4 +50,6 @@ int main()
         std::cout << "Function example:\n";
         std::cout << "(" << A << " + " << B << ") * " << A << " = " << (A + B) * A << "\n\n";
     }
+
+    std::cout << "Thanks for using this software!\n";
 }
