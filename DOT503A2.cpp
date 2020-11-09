@@ -5,7 +5,7 @@
 int main()
 {
     std::cout << "##### Calculator Software #####\n";
-    std::cout << "Ver 1.2\n\n";
+    std::cout << "Ver 1.3\n\n";
 
     int A;
     int B;
@@ -15,6 +15,8 @@ int main()
 
     std::cout << "\nPlease insert variable B:\n";
     std::cin >> B;
+
+    std::cout << "\n*****************************\n";
 
     //This function sums variable A and variable B and prints the result
     void addAB(int A, int B);
