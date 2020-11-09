@@ -5,7 +5,7 @@
 int main()
 {
     std::cout << "##### Calculator Software #####\n";
-    std::cout << "Ver 1.1\n\n";
+    std::cout << "Ver 1.2\n\n";
 
     int A;
     int B;
