@@ -46,7 +46,7 @@ int functionAB(int A, int B)
 int main(int argc, char* argv[])
 {
     std::cout << "##### Calculator Software #####\n";
-    std::cout << "Ver 1.2\n\n";
+    std::cout << "Ver 1.3\n\n";
 
     int A;
     int B;
