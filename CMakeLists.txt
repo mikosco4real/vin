@@ -20,7 +20,11 @@ include_directories(${PROJECT_SOURCE_DIR}/header)
 add_executable(
     calculator
     DOT503A2.cpp
-    DOT503Test.cpp
     )
 
 target_link_libraries(calculator ${GTEST_LIBRARIES} pthread)
+
+enable_testing()
+
+add_executable(tester DOT503Test.cpp)
+add_test(Tester tester)
