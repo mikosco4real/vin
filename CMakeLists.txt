@@ -14,5 +14,6 @@ include_directories(${PROJECT_SOURCE_DIR}/header)
  
 # Add the Executable Files
 add_executable(
+    calculator
     DOT503A2.cpp
     )
