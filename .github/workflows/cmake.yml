@@ -32,6 +32,14 @@ jobs:
       # The CMake binaries on the Github Actions machines are (as of this writing) 3.12
       run: cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=$BUILD_TYPE
 
+      name: Install gtest
+      shell: bash
+      run: apt install libgtest-dev
+
+      name: Configure gtest
+      shell: bash
+      run: cd /usr/src/gtest && cmake CMakeLists.txt && make && cp *.a /usr/lib && ln -s /usr/lib/libgtest.a /usr/local/lib/gtest/libgtest.a && ln -s /usr/lib/libgtest_main.a /usr/local/lib/gtest/libgtest_main.a
+
     - name: Build
       working-directory: ${{runner.workspace}}/build
       shell: bash
