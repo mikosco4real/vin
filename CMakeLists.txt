@@ -4,6 +4,10 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
+# Locate GTest
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
 # Give the Project name which is also the output file name
 project(calculator)
 
@@ -16,4 +20,7 @@ include_directories(${PROJECT_SOURCE_DIR}/header)
 add_executable(
     calculator
     DOT503A2.cpp
+    DOT503Test.cpp
     )
+
+target_link_libraries(calculator ${GTEST_LIBRARIES} pthread)
